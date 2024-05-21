@@ -4,6 +4,7 @@ import BlogList from "./BlogList";
 const Home = () => {
   const [blogs, setBlogs] = useState(null);
   const [isPending, setIsPending] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     setTimeout(() => {
@@ -17,9 +18,11 @@ const Home = () => {
         .then((data) => {
           setBlogs(data);
           setIsPending(false);
+          setError(null);
         })
         .catch(err => {
-          console.log(err.message);
+          setIsPending(false);
+          setError(err.message);
         })
     }, 1000);
   }, []);
@@ -27,6 +30,7 @@ const Home = () => {
   return (
     <div className="home">
       <h2 className="home-title">Home Page</h2>
+      {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
       {blogs && <BlogList blogs={blogs} title="All Blogs" />}
     </div>
