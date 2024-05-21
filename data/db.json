@@ -1,16 +1,16 @@
 {
-    "blogs": [
-        {
-            "title": "My first blog",
-            "body": "lorem ipsum how you doing ",
-            "author": "mario",
-            "id": 1
-        },
-        {
-            "title": "Opening Party",
-            "body": "lorem ipsum how you doing ",
-            "author": "yoshi",
-            "id": 2
-        }
-    ]
+  "blogs": [
+    {
+      "title": "My first blog",
+      "body": "lorem ipsum how you doing lorem ipsum how you doing lorem ipsum how you doing lorem ipsum how you doing ",
+      "author": "mario",
+      "id": 1
+    },
+    {
+      "title": "Opening Party",
+      "body": "lorem ipsum how you doing lorem ipsum how you doing lorem ipsum how you doing lorem ipsum how you doing ",
+      "author": "yoshi",
+      "id": 2
+    }
+  ]
 }
