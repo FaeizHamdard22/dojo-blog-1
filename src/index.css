@@ -117,3 +117,23 @@
   border-radius: 8px;
   cursor: pointer;
 }
+
+/* Not Found Page */
+.not-found {
+  text-align: center;
+}
+.not-found p {
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.not-found a {
+  background-color: #f1356d;
+  color: #fff;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 4px;
+  margin-top: 5px ;
+}
+.not-found a:hover {
+  background-color: #f1356dd7;
+}
