@@ -139,3 +139,11 @@
 .not-found a:hover {
   background-color: #f1356dd7;
 }
+
+/* Search Box */
+.search input {
+  width: 200px;
+  height: 40px;
+  border-radius: 4px;
+  margin: auto;
+} 
