@@ -1,5 +1,6 @@
 import BlogList from "./BlogList";
 import useFetch from "./useFetch";
+import SearchBox from "./components/SearchBox";
 
 const Home = () => {
   //data: blogs ---> means that we called the data here as blogs
@@ -11,10 +12,11 @@ const Home = () => {
 
   return (
     <div className="home">
-      <h2 className="home-title">Home Page</h2>
+      <h2 className="home-title">All Blogs</h2>
+      <SearchBox />
       {error && <div>{error}</div>}
       {isPending && <div>Loading...</div>}
-      {blogs && <BlogList blogs={blogs} title="All Blogs" />}
+      {blogs && <BlogList blogs={blogs} title="" />}
     </div>
   );
 };
