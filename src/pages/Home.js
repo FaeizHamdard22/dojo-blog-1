@@ -1,6 +1,6 @@
-import BlogList from "./BlogList";
-import useFetch from "./useFetch";
-import SearchBox from "./components/SearchBox";
+import BlogList from "../containers/BlogList";
+import useFetch from "../hooks/useFetch";
+import SearchBox from "../components/SearchBox";
 
 const Home = () => {
   //data: blogs ---> means that we called the data here as blogs
